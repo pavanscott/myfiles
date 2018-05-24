@@ -1,0 +1,5 @@
+Host 172.31.85.200
+     StrictHostKeyChecking no
+     UserKnownHostsFile /dev/null
+     IdentityFile ~/.ssh/keyforans.pem
+     user centos
