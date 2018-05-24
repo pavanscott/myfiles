@@ -17,4 +17,12 @@
               docker --version
               docker images
       register: result
-    - debug: var=result 
+    - debug: var=result
+
+    - name: running jenkins master docker container
+      shell: |
+
+             docker pull jenkins
+             docker run --name "jenkinsmaster" -d -p 80:8080 jenkins
+      register: result
+    - debug: var=result
